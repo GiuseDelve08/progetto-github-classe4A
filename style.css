@@ -1,0 +1,352 @@
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+ 
+body {
+
+  font-family: Arial, sans-serif;
+
+  line-height: 1.6;
+
+  background-color: #ffffff;
+
+  color: #333;
+
+}
+ 
+/* HERO */
+ 
+.hero {
+
+  background: linear-gradient(
+
+    rgba(46, 125, 50, 0.8),
+
+    rgba(255, 152, 0, 0.7)
+
+  );
+
+  color: white;
+
+  text-align: center;
+
+  padding: 100px 20px;
+
+}
+ 
+.hero h1 {
+
+  font-size: 3rem;
+
+}
+ 
+.hero p {
+
+  margin: 20px 0;
+
+}
+ 
+.btn {
+
+  display: inline-block;
+
+  background-color: white;
+
+  color: #2e7d32;
+
+  padding: 12px 24px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  transition: transform 0.3s ease;
+
+}
+ 
+.btn:hover {
+
+  transform: scale(1.05);
+
+}
+ 
+/* ANIMAZIONE */
+ 
+@keyframes pulse {
+
+  0% {
+
+    transform: scale(1);
+
+  }
+ 
+  50% {
+
+    transform: scale(1.08);
+
+  }
+ 
+  100% {
+
+    transform: scale(1);
+
+  }
+
+}
+ 
+.btn {
+
+  animation: pulse 2s infinite;
+
+}
+ 
+/* SEZIONI */
+ 
+section {
+
+  padding: 60px 20px;
+
+}
+ 
+h2 {
+
+  text-align: center;
+
+  margin-bottom: 40px;
+
+}
+ 
+/* STEP */
+ 
+.steps,
+
+.benefit-grid {
+
+  display: flex;
+
+  gap: 20px;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+}
+ 
+.step-card,
+
+.benefit-card {
+
+  background-color: #f5f5f5;
+
+  padding: 20px;
+
+  border-radius: 12px;
+
+  width: 280px;
+
+  text-align: center;
+
+}
+ 
+.icon {
+
+  font-size: 3rem;
+
+  margin-bottom: 10px;
+
+}
+ 
+/* FAQ */
+ 
+.faq {
+
+  max-width: 800px;
+
+  margin: auto;
+
+}
+ 
+.accordion-item {
+
+  border-bottom: 1px solid #ccc;
+
+}
+ 
+.accordion-header {
+
+  width: 100%;
+
+  background-color: #e8f5e9;
+
+  border: none;
+
+  padding: 18px;
+
+  text-align: left;
+
+  font-size: 1rem;
+
+  cursor: pointer;
+
+}
+ 
+.accordion-content {
+
+  max-height: 0;
+
+  overflow: hidden;
+
+  transition: max-height 0.3s ease;
+
+  background-color: white;
+
+  padding: 0 18px;
+
+}
+ 
+.accordion-item.active .accordion-content {
+
+  max-height: 200px;
+
+  padding: 18px;
+
+}
+ 
+/* FORM */
+ 
+.newsletter {
+
+  text-align: center;
+
+}
+ 
+form {
+
+  margin-top: 20px;
+
+}
+ 
+input {
+
+  padding: 12px;
+
+  width: 280px;
+
+  border: 2px solid #2e7d32;
+
+  border-radius: 8px;
+
+}
+ 
+button {
+
+  padding: 12px 20px;
+
+  border: none;
+
+  background-color: #ff9800;
+
+  color: white;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+}
+ 
+/* ACCESSIBILITÀ */
+ 
+a:focus,
+
+button:focus,
+
+input:focus {
+
+  outline: 3px solid #ff9800;
+
+  outline-offset: 3px;
+
+}
+ 
+/* FOOTER */
+ 
+.footer {
+
+  background-color: #2e7d32;
+
+  color: white;
+
+  display: flex;
+
+  justify-content: space-around;
+
+  flex-wrap: wrap;
+
+  padding: 40px 20px;
+
+}
+ 
+.footer a {
+
+  color: white;
+
+  text-decoration: none;
+
+}
+ 
+.footer ul {
+
+  list-style: none;
+
+}
+ 
+/* RESPONSIVE */
+ 
+@media screen and (max-width: 768px) {
+ 
+  .hero h1 {
+
+    font-size: 2rem;
+
+  }
+ 
+  .steps,
+
+  .benefit-grid,
+
+  .footer {
+
+    flex-direction: column;
+
+    align-items: center;
+
+  }
+ 
+  input {
+
+    width: 100%;
+
+    max-width: 300px;
+
+    margin-bottom: 10px;
+
+  }
+ 
+  button {
+
+    width: 100%;
+
+    max-width: 300px;
+
+  }
+
+}
+ 
